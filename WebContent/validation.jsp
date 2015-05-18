@@ -26,6 +26,6 @@
 			e.printStackTrace();
 		} finally {
 			DatabaseSettings.closeConnection(con, st, rs);
-		}
+	   }
 	}
 %>
