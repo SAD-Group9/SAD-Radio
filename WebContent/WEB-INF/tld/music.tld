@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd" version="2.0">
+	<tlib-version>1.2</tlib-version>
+	<short-name>MusicPlayer</short-name>
+	<uri>musicplayerMap</uri>
+	
+	<function>	
+	<name>doGotoCheckLogin</name>
+		<function-class>slv.musicplayer.managerbeans.LoginMB</function-class>
+		<function-signature>boolean doGotoCheckLogin(slv.musicplayer.beans.LoginBean)</function-signature>
+	</function>
+	
+	<function>	
+	<name>doGotoAddUser</name>
+		<function-class>slv.musicplayer.managerbeans.UserMB</function-class>
+		<function-signature>boolean doGotoAddUser(slv.musicplayer.beans.UserBean)</function-signature>
+	</function>
+	
+	
+</taglib>
