@@ -45,7 +45,6 @@
     </noscript>
 </head>
 <body>
-
 	<div id="templatemo_container">
 		<div id="templatemo_header">
 			<div id="templatemo_title">
@@ -71,8 +70,7 @@
 				<li><a href="userdashboardrock">SPORTS</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
 				
-<!-- 				<li><a href="index">LOG IN</a></li> -->
-<!-- 				<li><a href="signup">SIGN UP</a></li> -->
+				
 				<li style="float: right;"><a href="index">LOG OUT</a></li>
 			</ul>
 		</div>
