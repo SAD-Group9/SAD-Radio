@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Online Audio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/rs-plugin/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link id="link" rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+	<!-- jQuery -->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+	
+    <script type="text/javascript">
+        $("document").ready(function () {
+            $("#jpId").jPlayer(
+                {
+                    ready: function () {
+                        $(this).jPlayer("setMedia", {
+                            mp3: "bustedchump.mp3" // Url of the mp3 file
+                        }).jPlayer("play");
+                    },
+                    supplied: "mp3"
+                }
+            );
+        });
+    </script>
+</head>
+
+
+<body>
+	<div id="jpId"></div>
+	
+<!-- Navigation Bar -->
+	<nav class="navbar navbar-default" role="navigation">
+	  	<div class="container">
+	      <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			    	<span class="sr-only">Toggle navigation</span>
+			    	<span class="icon-bar"></span>
+			    	<span class="icon-bar"></span>
+			    	<span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="index.html">Group 11 Online Radio</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse row" id="bs-example-navbar-collapse-1">
+
+				<!-- Navigation links -->
+		      	<ul class="nav navbar-nav">
+		      		<li><a href="index.html">Home</a></li>
+	      		  	<li class="dropdown">
+		          		<a class="selected dropdown-toggle" data-toggle="dropdown" href="#">Category <i class="icon-down-open"></i> </a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	
+                            <li><a href="#">Top 10</a></li>
+                            <li><a href="#">Rock</a></li>
+                            <li><a href="#">Classic</a></li>
+                            
+			          	</ul>
+		        	</li>
+                    <li><a href="#">Download</a></li>
+                            <li><a href="#">RSS</a></li>
+                    <li><a id="btn-login" href="index.html" >Logout  </a></li>
+                    
+		      	</ul>
+	    	</div><!-- /.navbar-collapse -->
+	  	</div><!-- /.container-fluid -->
+	</nav>
+
+
+	<!-- Slider -->
+	<div class="tp-banner-container">
+		<div class="tp-banner">
+			<ul>
+				<!-- SLIDE 1 -->
+				<li>
+					<!-- MAIN IMAGE --><img src="assets/musicbg.jpg"  alt="slidebg2"  data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat"></li>
+
+				
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Top Section Home -->
+	<div class="container top-section">
+		<div class="row slideUp">
+			<!-- Latest Albums -->
+			<div class="col-sm-6 col-md-4">
+				<div class="album">
+					<img src="assets/latest-1.jpg" alt="Album" class="img-responsive">
+					<div class="info">
+						<a class="buy" href="#"><i class="flaticon-volume24"></i></a>
+						<h5>Legacy Of Bass </h5>
+						<p>Spinnin' Records, Musical Freedom</p>
+					</div>
+				</div>
+			</div>
+			<!-- Latest Events -->
+			<div class="col-sm-6 col-md-4 col-md-push-4">
+				<ul class="latest-events">
+					<li>
+						<a href="#">
+							<span class="location"><i class="flaticon-volume24"></i></span>
+							<h5>Tiesto Trafic Night Party</h5>
+							<p>NEW ORLEANS L.A , BAMBOO CLUB</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="location"><i class="flaticon-volume24"></i></span>
+							<h5>Super Night Life Event</h5>
+							<p>NOAKLAND C.A , CREMA SUMMER</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="location"><i class="flaticon-volume24"></i></span>
+							<h5>Tomorrowland Big Party</h5>
+							<p>BEACH MIAMI L.A , EGO CLUB</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="location"><i class="flaticon-volume24"></i></span>
+							<h5>Pepe Romexpo Concert</h5>
+							<p>ROMEXPRO BUCHAREST, RO</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="location"><i class="flaticon-volume24"></i></span>
+							<h5>Tiesto Trafic Night Party</h5>
+							<p>NEW ORLEANS L.A , BAMBOO CLUB</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- Player -->
+			<div class="col-sm-12 col-md-4 col-md-pull-4">
+				<div class="player-container">
+					<!-- Player -->
+					<div class="player">
+						<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+						<div id="jp_container_1" class="jp-audio">
+							<div class="jp-type-playlist">
+								<div class="jp-gui jp-interface">
+									<ul class="jp-controls">
+										<li><a href="javascript:;" class="jp-previous" tabindex="1">
+                                        <i class="flaticon-previous7"></i></a></li>
+										<li><a href="javascript:;" class="jp-play" tabindex="1">
+                                        <i class="flaticon-play36"></i></a></li>
+										<li><a href="javascript:;" class="jp-pause" tabindex="1">
+                                        <i class="icon-pause"></i></a></li>
+										<li><a href="javascript:;" class="jp-next" tabindex="1">
+                                        <i class="flaticon-next9"></i></a></li>
+									</ul>
+									<span class="separator"></span>
+									<div class="jp-progress">
+										<div class="jp-seek-bar">
+											<div class="jp-play-bar"></div>
+										</div>
+									</div>
+									<div class="sound">
+										<a href="javascript:;" class="jp-mute" tabindex="1" title="mute"><i class="flaticon-volume24"></i></a>
+										<a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"><i class="flaticon-mute8"></i></a>
+									</div>
+								</div>
+								<div class="jp-playlist jp-single">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+								
+								<div class="jp-no-solution">
+									<span>Update Required</span>
+									To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Button -->
+		<div class="button-section">
+			<i class="icon-up-open"></i>
+		</div>
+	</div>
+	<div class="container clearfix block-sep"></div>
+	<!-- Footer -->
+	<div class="footer">
+		<div class="container"></div>
+		<div class="copyright">
+			<div class="container">
+				<p></p>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery -->
+	<script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/respond.min.js"></script>
+	<script type="text/javascript" src="assets/js/masonry.js"></script>
+	<script type="text/javascript" src="assets/js/lightbox.min.js"></script>
+	<script type="text/javascript" src="assets/js/js.js"></script>
+
+	<script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<!-- jPlayer -->
+	<script type="text/javascript" src="assets/jplayer/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="assets/jplayer/jplayer.playlist.min.js"></script>
+	<script src="assets/js/countdown.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+	    $(document).ready(function(){
+
+				
+			new jPlayerPlaylist({
+				jPlayer: "#jquery_jplayer_1 ",			
+				cssSelectorAncestor: "#jp_container_1",
+				
+			}, [
+				{
+					title:"Avicii - Lay Me Down",
+					mp3:"assets/music/bustedchump.mp3",
+					oga:"",
+					preload:"auto"
+				},
+				{
+					title:"Martin Garrix - Wizard",
+					mp3:"assets/music/cloudlessdays.mp3",
+					oga:""
+				},
+				{
+					title:"Nicky Romero - Legacy",
+					mp3:"assets/music/coreissues.mp3",
+					oga:""
+				},
+				{
+					title:"Swedish Mafia - Don't worry",
+					mp3:"assets/music/electrofreak.mp3",
+					oga:""
+				},
+				{
+					title:"Avicii - Lay Me Down",
+					mp3:"assets/music/freeform.mp3",
+					oga:""
+				},
+				{
+					title:"Martin Garrix - Wizard",
+					mp3:"assets/music/Martin_Garrix-Wizard.mp3",
+					oga:""
+				},
+				{
+					title:"Nicky Romero - Legacy",
+					mp3:"assets/music/Nicky_Romero-Legacy.mp3",
+					oga:""
+				},
+			], {
+				swfPath: "assets/jplayer",
+				supplied: "oga, mp3",
+				wmode: "window",
+				smoothPlayBar: false,
+				keyEnabled: true,
+				preload:"auto"
+			});
+
+			
+			
+			// jQuery REVOLUTION Slider
+			"use strict";
+			jQuery('.tp-banner').show().revolution(
+			{
+				delay:4000,
+				startwidth:1920,
+				startheight:350,
+				hideThumbs:100,
+				fullWidth:"on",
+				fullScreen:"off",
+				navigationStyle: "off",
+				shadow: 0,
+				autoHeight:"off",									
+			});
+
+
+			// CountDown
+			$("#countdown").countdown({
+				date: "30 december 2015 12:00:00", // Edit this line
+				format: "on"
+			},
+			function() {
+				// callback function
+			});
+			$("#countdown-2").countdown({
+				date: "30 december 2015 12:00:00", // Edit this line
+				format: "on"
+			},
+			function() {
+				// callback function
+			});
+		});
+	</script>
+
+	<!-- ======== style switcher ======== -->
+	<script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="assets/js/switcher.js"></script>
+</body>
+
+</html>
