@@ -64,7 +64,7 @@
 		<div id="templatemo_menu">
 			<ul>
 				<li><a href="userdashboardpop" class="current" style="width:90px;">POP MUSIC</a></li>
-				<li><a href="userdashboardrock">TALK SHOW</a></li>
+				<li><a href="quiz.html">TALK SHOW</a></li>
 				<li><a href="news.html">EVENTS</a></li>
 				<li><a href="userdashboardrock">PODCASTS</a></li>
 				<li><a href="userdashboardrock">SPORTS</a></li>

@@ -6,7 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <title>Online Quiz</title>
 <link rel="stylesheet" type="text/css" href="style.css">
-</head><body>
+</head>
+<body>
   
 <div id="main_container">
 	<div class="main_content">
@@ -36,9 +37,10 @@
 						
 				
                     </ul>
-                    	
+                  </div>  	
             </div>  
- 
+ 			</div>
+ 		</div>
 
             
             <div class="middle_box">
@@ -51,3 +53,6 @@
             
             
             </div>
+            
+       </body>
+      </html>
